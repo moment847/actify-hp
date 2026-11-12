@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://actify.moment-tokyo.jp/sitemap.xml
