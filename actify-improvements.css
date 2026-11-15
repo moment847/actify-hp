@@ -8,3 +8,20 @@
 @media(max-width:600px){.week-list h3{font-size:20px}.week-cta .btn,.consult>.wrap>.btn{width:100%;padding:12px 16px}.kun-btn{width:72px;height:72px}.kun-dock{bottom:calc(78px + env(safe-area-inset-bottom))}.fit-note{padding:18px}.mbar{grid-template-columns:1fr 1.25fr}}
 
 .board-hd{overflow:clip}
+
+/* Official LINE consultation */
+a.line-cta,a.btn.line-cta{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:12px 22px;background:#008a3c;color:#fff;border:1px solid #008a3c;border-radius:6px;text-decoration:none;font-weight:700;line-height:1.5;touch-action:manipulation;transition:background-color .15s}
+a.line-cta:hover,a.btn.line-cta:hover{background:#006f30;border-color:#006f30}
+a.line-cta:focus-visible{outline:3px solid #14223d;outline-offset:4px}
+.line-badge{flex:none;background:#fff;color:#008a3c;border-radius:5px;padding:3px 6px;font-size:11px;letter-spacing:0;line-height:1.4}
+.header a.line-cta{min-height:44px;padding:9px 14px;font-size:13px}
+@media(max-width:1080px){.header-in>a.line-cta{display:none}}
+@media(max-width:600px){
+body{padding-bottom:calc(88px + env(safe-area-inset-bottom))}
+a.btn.line-cta{width:100%;min-height:56px;padding:12px 14px;font-size:15px}
+.mbar{grid-template-columns:92px minmax(0,1fr);gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom))}
+.mbar a.line-cta{min-height:56px;font-size:14px;padding:8px 10px;gap:6px}
+.mbar .line-badge{display:none}
+.kun-dock{bottom:calc(94px + env(safe-area-inset-bottom))}
+.mnav a.line-cta{margin-top:16px}
+}
